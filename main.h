@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -32,7 +33,7 @@ int print_octal(va_list l, flags_t *f);
 /* converter */
 char *convert(unsigned long int num, int base, int lowercase);
 
-/* _printf */
+/** _printf **/
 int _printf(const char *format, ...);
 
 /* get_print */
@@ -57,7 +58,7 @@ int print_bigS(va_list l, flags_t *f);
 /* print_address */
 int print_address(va_list l, flags_t *f);
 
-/* print_percent */
+/** print_percent **/
 int print_percent(va_list l, flags_t *f);
 
 
